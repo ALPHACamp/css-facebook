@@ -1,0 +1,430 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9ebee;
+  font-family: 'MicroSoft Jhenhei', sans-serif;
+}
+
+#app {
+  width: 500px;
+  background: white;
+  border: 1px solid #dddfe2;
+  border-radius: 4px;
+  padding-bottom: 12px;
+}
+
+#app .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px 0;
+}
+
+#app .header .left-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* * {
+  border: 1px solid;
+} */
+
+#app .header .left-info .thumbnail img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+#app .header .left-info .name-info .name {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+#app .header .left-info .name-info .name a {
+  text-decoration: none;
+  color: #365899;
+}
+
+#app .header .left-info .name-info .name a:hover {
+  text-decoration: underline;
+}
+
+#app .header .left-info .name-info .time {
+  color: #616770;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app .header .left-info .name-info .time .global-icon {
+  width: 12px;
+  height: 12px;
+  background-position: -28px -499px;
+  background-image: url("https://upload.cc/i1/2019/09/08/Q4vyF3.png");
+  background-size: 73px 540px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+#app .header .right-info {
+  background-image: url("https://upload.cc/i1/2019/09/08/hslRLB.png");
+  background-repeat: no-repeat;
+  background-size: 500px 287px;
+  background-position: -242px -245px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#app .content {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin: 0 0 7px 0;
+  padding: 12px 12px 0;
+}
+
+#app .video-link {
+  text-decoration: none;
+}
+
+#app .video-link .video-wrapper {
+  display: flex;
+  background: #f2f3f5;
+  width: 500px;
+  height: 139px;
+  cursor: pointer;
+}
+
+#app .video-link .video-wrapper .video-thumbnail img {
+  width: 139px;
+  heigth: 139px;
+}
+
+#app .video-link .video-wrapper .video-description {
+  display: flex;
+  padding: 10px 12px;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #dddfe2;
+  border-bottom: 1px solid #dddfe2;
+}
+
+#app .video-link .video-wrapper .video-description .youtube-title {
+  color: #606770;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+#app .video-link .video-wrapper .video-description .video-title {
+  color: #1d2129;
+  font-weight: bolder;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 2px;
+}
+
+#app .video-link .video-wrapper .video-description .video-desc {
+  color: #606770;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 3px;
+  width: 330px;
+  max-height: 40px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+}
+
+#app .feedback-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dadde1;
+  margin: 10px 12px 0 12px;
+  padding: 0 0 10px 0;
+}
+
+/* .feedback-action * {
+  border: 1px solid;
+} */
+
+#app .feedback-info .feedback-emojis {
+  min-width: 100px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+#app .feedback-info .feedback-emojis .icons.like-icon {
+  background-image: url("https://upload.cc/i1/2019/09/08/r4gN8W.png");
+  background-repeat: no-repeat;
+  background-size: 49px 660px;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: -2px;
+  margin-right: 2px;
+  background-position: 0 -526px;
+}
+
+#app .feedback-info .threads-and-share {
+  font-size: 14px;
+}
+
+#app .feedback-action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  height: 32px;
+  color: #606770;
+  margin: 0 12px;
+  min-height: 32px;
+  padding: 4px 0;
+}
+
+/* #app .feedback-action div {
+  cursor: pointer;
+} */
+
+#app .feedback-action .fb-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 32px;
+  cursor: pointer;
+}
+
+#app .feedback-action .fb-wrapper:hover {
+  background-color: rgba(29, 33, 41, 0.04);
+  border-radius: 2px;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin: 0 6px 0 0;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon.thumb-up {
+  font-size: 18px;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon.response {
+  background-image: url("https://upload.cc/i1/2019/09/08/EDpM5h.png");
+  background-size: 161px 376px;
+  background-position: -42px -249px;
+}
+
+#app .feedback-action .fb-wrapper .fb-icon.share {
+  background-image: url("https://upload.cc/i1/2019/09/08/EDpM5h.png");
+  background-size: 161px 376px;
+  background-position: -61px -249px;
+}
+
+#app .comments {
+  margin: 0 12px;
+  border-top: 1px solid #dadde1;
+}
+
+#app .my-comment-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+#app .my-comment-wrapper .my-avatar img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 6px;
+}
+
+#app .my-comment-wrapper .my-comment {
+  background-color: #f2f3f5;
+  border: 1px solid #ccd0d5;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: text;
+  flex: 1 1 auto;
+  line-height: 16px;
+  padding: 7px 12px;
+}
+
+#app .my-comment-wrapper .my-comment .my-comment-placeholder {
+  color: #8d949e;
+  font-size: 14px;
+}
+
+#app .my-comment-wrapper .my-comment .my-comment-placeholder input[type=text] {
+  width: 410px;
+  outline: none;
+  padding: 0;
+  border: 0 solid transparent;
+  background: transparent;
+  font-size: 14px;
+}
+
+#app .people-comment-wrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#app .people-comment-wrapper .people-avatar img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  margin-right: 6px;
+}
+
+#app .people-comment-wrapper .people-comment {
+  background-color: #f2f3f5;
+  border-radius: 18px;
+  color: #1c1e21;
+  line-height: 16px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container {
+  color: #1c1e21;
+  font-size: 14px;
+  display: flex;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name {
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name a {
+  text-decoration: none;
+  color: #365899;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name a:hover {
+  text-decoration: underline;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-name .blue-check {
+  margin-left: 4px;
+  background-image: url("https://upload.cc/i1/2019/09/08/AWuPyM.png");
+  background-repeat: no-repeat;
+  background-size: 28px 195px;
+  background-position: 0 -165px;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  vertical-align: -2px;
+}
+
+#app .people-comment-wrapper .people-comment .comment-reactions {
+  position: absolute;
+  bottom: 4px;
+  right: -25px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  color: #8d949e;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 2px 1px 2px 4px;
+}
+
+#app .people-comment-wrapper .people-comment .comment-reactions .icons.like-icon {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 0 white;
+  background-image: url("https://upload.cc/i1/2019/09/08/r4gN8W.png");
+  background-repeat: no-repeat;
+  background-size: 49px 660px;
+  background-position: 0 -526px;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 2px;
+}
+
+#app .people-comment-wrapper .people-comment .comment-reactions .number {
+  color: #777d88;
+  padding: 0 3px 0 2px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#app .like-and-response-wrapper {
+  display: flex;
+  color: #90949c;
+  font-size: 13px;
+  line-height: 13px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+#app .like-and-response-wrapper .tiny-dot {
+  margin-left: 2px;
+  margin-right: 4px;
+  color: #8d949e;
+}
+
+#app .like-and-response-wrapper .like-comment {
+  color: #365899;
+  cursor: pointer;
+}
+
+/* 新增以下 */
+
+.is-thumb-up {
+  color: #2078f4;
+}
+
+#app .people-comment-wrapper .people-comment .comment-reactions.zero-thumb {
+  display: none;
+}
+
+.easter-egg-styling {
+  cursor: pointer;
+  font-weight: 600;
+  color: #f1765e;
+}
+
+
+#app .people-comment-wrapper .people-comment .people-comment-container .inner-image {
+    width: 360px;
+    margin-bottom: 5px;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container.comment-contains-html {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#app .people-comment-wrapper .people-comment .people-comment-container .people-saying p {
+    margin: 5px 0;
+}
+
